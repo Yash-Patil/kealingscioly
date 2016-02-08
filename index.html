@@ -11,31 +11,210 @@
 <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.indigo-pink.min.css">
 <script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
 
-<div class="container-fluid">
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-	  <header class="mdl-layout__header">
-	    <div class="mdl-layout__header-row">
-	      <!-- Title -->
-	      <span class="mdl-layout-title">Kealing Scioly</span>
-	      <!-- Add spacer, to align navigation to the right -->
-	      <div class="mdl-layout-spacer"></div>
-	      <!-- Navigation. We hide it in small screens. -->
-	      <nav class="mdl-navigation mdl-layout--large-screen-only">
-	        <a class="mdl-navigation__link" href="index.html">Home</a>
-	        <a class="mdl-navigation__link" href="">Teams</a>
-	        <a class="mdl-navigation__link" href="">About</a>
-	        <a class="mdl-navigation__link" href="">Contact</a>
-	      </nav>
-	    </div>
-	  </header>
-	  <div class="mdl-layout__drawer">
-	    <span class="mdl-layout-title">Extras</span>
-	    <nav class="mdl-navigation">
-	      <a class="mdl-navigation__link" href="">Link</a>
-	      <a class="mdl-navigation__link" href="">Link</a>
-	      <a class="mdl-navigation__link" href="">Link</a>
-	      <a class="mdl-navigation__link" href="">Link</a>
-	    </nav>
-	  </div>
+		<!-- Uses a transparent header that draws on top of the layout's background -->
+		<style>
+		.demo-layout-transparent {
+		  background: url('teampic.PNG') center / cover;
+		}
+		.demo-layout-transparent .mdl-layout__header,
+		.demo-layout-transparent .mdl-layout__drawer-button {
+		  /* This background is dark, so we set text to white. Use 87% black instead if
+		     your background is light. */
+		  color: white;
+		}
+		</style>
+
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+		  <header class="mdl-layout__header mdl-layout__header--transparent">
+		    <div class="mdl-layout__header-row">
+		      <!-- Title -->
+		      <span class="mdl-layout-title">Kealing Scioly</span>
+		      <!-- Add spacer, to align navigation to the right -->
+		      <div class="mdl-layout-spacer"></div>
+		      <!-- Navigation -->
+		      <nav class="mdl-navigation">
+		        <a class="mdl-navigation__link" href="index.html" style="text-decoration: none;">Home</a>
+		        <a class="mdl-navigation__link" href="teams.html" style="text-decoration: none;">Teams</a>
+		        <a class="mdl-navigation__link" href="" style="text-decoration: none;">About</a>
+		        <a class="mdl-navigation__link" href="" style="text-decoration: none;">Contact</a>
+		      </nav>
+		    </div>
+		  </header>
+		  <div class="mdl-layout__drawer">
+		    <span class="mdl-layout-title">Extras</span>
+		    <nav class="mdl-navigation">
+		      <a class="mdl-navigation__link" href="" style="text-decoration: none;">Forum</a>
+		      <a class="mdl-navigation__link" href="" style="text-decoration: none;">School</a>
+		      <a class="mdl-navigation__link" href="" style="text-decoration: none;">Link</a>
+		      <a class="mdl-navigation__link" href="" style="text-decoration: none;">Link</a>
+		    </nav>
+		  </div>
+		  <main class="mdl-layout__content">
+		  </main>
+		</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Events:</h3>
+		</div>
+	<div class="row">
+	<div class="row">
+		<div class="col-md-4">
+			<!--Next Meeting-->
+			<center>
+				<style>
+				.demo-card-event.mdl-card {
+				  width: 256px;
+				  height: 256px;
+				  background: #3E4EB8;
+				}
+				.demo-card-event > .mdl-card__actions {
+				  border-color: rgba(255, 255, 255, 0.2);
+				}
+				.demo-card-event > .mdl-card__title {
+				  align-items: flex-start;
+				}
+				.demo-card-event > .mdl-card__title > h4 {
+				  margin-top: 0;
+				}
+				.demo-card-event > .mdl-card__actions {
+				  display: flex;
+				  box-sizing:border-box;
+				  align-items: center;
+				}
+				.demo-card-event > .mdl-card__actions > .material-icons {
+				  padding-right: 10px;
+				}
+				.demo-card-event > .mdl-card__title,
+				.demo-card-event > .mdl-card__actions,
+				.demo-card-event > .mdl-card__actions > .mdl-button {
+				  color: #fff;
+				}
+				</style>
+
+				<div class="demo-card-event mdl-card mdl-shadow--2dp">
+				  <div class="mdl-card__title mdl-card--expand">
+				    <h4 align="left">
+				      Next meeting:<br>
+				      Feb 10, 2016<br>
+				      2:45-4:30pm
+				    </h4>
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+				    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="text-decoration: none;">
+				      Event
+				    </a>
+				    <div class="mdl-layout-spacer"></div>
+				    <i class="material-icons">event</i>
+				  </div>
+				</div>
+			</center>
+		</div>
+		<div class="col-md-4">
+		<!--Event-->
+		<center>
+			<div class="demo-card-event mdl-card mdl-shadow--2dp">
+			  <div class="mdl-card__title mdl-card--expand">
+			    <h4 align="left">
+			      Regionals:<br>
+			      March 5, 2016<br>
+			    </h4>
+			  </div>
+			  <div class="mdl-card__actions mdl-card--border">
+			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="text-decoration: none;">
+			      Event
+			    </a>
+			    <div class="mdl-layout-spacer"></div>
+			    <i class="material-icons">event</i>
+			  </div>
+			</div>
+		</center>
+		</div>
+		<div class="col-md-4">
+		<!--Event-->
+		<center>
+			<div class="demo-card-event mdl-card mdl-shadow--2dp">
+			  <div class="mdl-card__title mdl-card--expand">
+			    <h4 align="left">
+			      UT invitational:<br>
+			      April 2, 2016<br>
+			    </h4>
+			  </div>
+			  <div class="mdl-card__actions mdl-card--border">
+			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="text-decoration: none;">
+			      Event
+			    </a>
+			    <div class="mdl-layout-spacer"></div>
+			    <i class="material-icons">event</i>
+			  </div>
+			</div>
+		</center>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-md-4">
+		<!--Event-->
+		<center>
+			<div class="demo-card-event mdl-card mdl-shadow--2dp">
+			  <div class="mdl-card__title mdl-card--expand">
+			    <h4 align="left">
+			      State:<br>
+			      April 22-23, 2016<br>
+			    </h4>
+			  </div>
+			  <div class="mdl-card__actions mdl-card--border">
+			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="text-decoration: none;">
+			      Event
+			    </a>
+			    <div class="mdl-layout-spacer"></div>
+			    <i class="material-icons">event</i>
+			  </div>
+			</div>
+		</center>
+		</div>
 	</div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
