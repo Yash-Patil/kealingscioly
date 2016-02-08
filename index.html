@@ -35,8 +35,15 @@
 		      <nav class="mdl-navigation">
 		        <a class="mdl-navigation__link" href="index.html" style="text-decoration: none;">Home</a>
 		        <a class="mdl-navigation__link" href="teams.html" style="text-decoration: none;">Teams</a>
-		        <a class="mdl-navigation__link" href="" style="text-decoration: none;">About</a>
+		        <a class="mdl-navigation__link" href="results.html" style="text-decoration: none;">Results</a>
 		        <a class="mdl-navigation__link" href="" style="text-decoration: none;">Contact</a>
+		        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="more">
+				    <i class="material-icons">more_vert</i>
+				</button>
+				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="more">
+					<li class="mdl-menu__item">Forum</li>
+					<li class="mdl-menu__item">School</li>
+				</ul>
 		      </nav>
 		    </div>
 		  </header>
@@ -90,6 +97,33 @@
 <br>
 
 <div class="container">
+	<div class="row">
+		<center>
+			<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Click Me</button>
+			<div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+			  <div class="mdl-snackbar__text"></div>
+			  <button class="mdl-snackbar__action" type="button"></button>
+			</div>
+			<script>
+			(function() {
+			  'use strict';
+			  var snackbarContainer = document.querySelector('#demo-snackbar-example');
+			  var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+			  var handler = function(event) {
+			    showSnackbarButton.style.backgroundColor = '';
+			  };
+			  showSnackbarButton.addEventListener('click', function() {
+			    'use strict';
+			    var data = {
+			      message: 'For optimal experience, set browser zoom to %100',
+			      timeout: 5000
+			    };
+			    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+			  });
+			}());
+			</script>
+		</center>
+	</div>
 	<div class="row">
 		<div class="col-md-12">
 			<h3>Events:</h3>
@@ -212,6 +246,13 @@
 		</center>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<center>
+				<h3>Events</h3>
+			</center>
+		</div>
+	</div>	
 </div>
 
 <br>
@@ -227,7 +268,7 @@
   <div class="mdl-mega-footer__bottom-section">
     <div class="mdl-logo">Kealing Scioly</div>
     <ul class="mdl-mega-footer__link-list">
-      <li><a href="#">Website created by Yash Patil</a></li>
+      <li><a href="#">Website created by Yash Patil (ypatil12516@gmail.com)</a></li>
       <li><a href="https://github.com/Yash-Patil/kealingscioly">View on Github</a></li>
     </ul>
   </div>
